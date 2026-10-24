@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coding Club</title>
+    <style>
+        :root {
+            --primary-color: #0879c9;
+            --primary-dark: #075ca3;
+            --background-color: #eaf4f4;
+            --card-color: #ffffff;
+            --text-color: #243746;
+            --muted-color: #d9e8ee;
+            --spacing-small: 10px;
+            --spacing-medium: 20px;
+            --spacing-large: 30px;
+        }
+
+        
+        * {
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            margin: 0;
+            padding: var(--spacing-large);
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: "Roboto", Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        
+        #hero {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: var(--spacing-large);
+            border-radius: 12px;
+            margin-bottom: var(--spacing-large);
+        }
+
+        #hero h1 {
+            font-family: Georgia, serif;
+            font-size: 38px;
+            margin: 0;
+        }
+
+        #hero p {
+            margin: var(--spacing-small) 0 0;
+            color: #e2f2ff;
+        }
+
+        /* 5.2: Class selector */
+        .card {
+            background-color: var(--card-color);
+            padding: var(--spacing-medium);
+            margin-bottom: var(--spacing-large);
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-size: 25px;
+            margin-top: 0;
+            color: var(--text-color);
+        }
+
+        /* Events table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: left;
+            padding: var(--spacing-small);
+        }
+
+        td {
+            padding: var(--spacing-small);
+            border-bottom: 1px solid var(--muted-color);
+        }
+
+        tr:hover {
+            background-color: var(--background-color);
+        }
+
+        /* Registration form */
+        .form-row {
+            margin-bottom: var(--spacing-small);
+        }
+
+        label {
+            display: inline-block;
+            width: 65px;
+        }
+
+        input {
+            width: 210px;
+            max-width: 100%;
+            padding: 9px;
+            border: 1px solid #a9bec9;
+            border-radius: 4px;
+            font: inherit;
+        }
+
+        input:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 1px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 22px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: var(--primary-dark);
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+
+    
+    <header id="hero">
+        <h1>Coding Club</h1>
+        <p>Learn. Build. Share.</p>
+    </header>
+
+    
+    <section class="card">
+        <h2>Upcoming Events</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Event</th>
+                    <th>Date</th>
+                    <th>Venue</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>HTML Workshop</td>
+                    <td>14 July</td>
+                    <td>Lab 8</td>
+                </tr>
+
+                <tr>
+                    <td>Hackathon</td>
+                    <td>02 September</td>
+                    <td>Seminar Hall</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    
+    <section class="card">
+        <h2>Register</h2>
+
+        <form action="#" method="post">
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                >
+            </div>
+
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                >
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+</body>
+</html>
+
