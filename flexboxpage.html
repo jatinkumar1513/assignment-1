@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLab - Learn Web Development</title>
+
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #203747;
+            background-color: #f4f8f9;
+            line-height: 1.6;
+        }
+
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #073653;
+            color: white;
+            padding: 12px 24px;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #ffbd39;
+        }
+
+        .signup-btn,
+        .get-started {
+            background-color: #ffb52e;
+            color: #24313b;
+            border: none;
+            border-radius: 7px;
+            padding: 10px 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .signup-btn:hover,
+        .get-started:hover {
+            background-color: #f3a514;
+        }
+
+        
+        .hero {
+            min-height: 265px;
+            background-color: #0879dc;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 30px 20px;
+            gap: 10px;
+        }
+
+        .hero h1 {
+            font-size: 32px;
+        }
+
+        .hero p {
+            color: #d7f2ff;
+            font-size: 16px;
+        }
+
+       
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 30px;
+            justify-content: center;
+        }
+
+        .card {
+            flex: 1 1 200px;
+            min-width: 0;
+            padding: 20px;
+            text-align: center;
+            background-color: #f4f8f9;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+        }
+
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
+
+        .card p {
+            color: #526b78;
+        }
+
+        
+        
+    </style>
+</head>
+
+<body>
+
+   
+    <header class="navbar">
+        <div class="logo">CodeLab</div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="signup-btn"
+                onclick="alert('Welcome to CodeLab!')">
+            Sign up
+        </button>
+    </header>
+
+    
+    <main id="home">
+        <section class="hero">
+            <h1>Learn Web Development</h1>
+            <p>Start from zero. Build real projects.</p>
+            <button class="get-started"
+                    onclick="document.getElementById('courses').scrollIntoView({behavior:'smooth'})">
+                Get started
+            </button>
+        </section>
+
+      
+        <section class="courses" id="courses">
+
+            <article class="card">
+                <h2>HTML</h2>
+                <p>Build the structure</p>
+            </article>
+
+            <article class="card">
+                <h2>CSS</h2>
+                <p>Make it beautiful</p>
+            </article>
+
+            <article class="card">
+                <h2>JavaScript</h2>
+                <p>Make it smart</p>
+            </article>
+
+            <article class="card">
+                <h2>Git</h2>
+                <p>Save your work</p>
+            </article>
+
+        </section>
+    </main>
+
+    <footer id="contact"
+            style="text-align:center; padding:20px; color:#526b78;">
+        Contact CodeLab to learn more about our courses.
+    </footer>
+
+</body>
+</html>
+
