@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the Coding Club. Explore events and register today.">
+    <title>Coding Club</title>
+
+    
+    <link rel="icon" type="image/png" href="./favicon.png.jpeg">
+</head>
+
+<body>
+
+   
+    <nav>
+        <a href="registrationpage.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="register.html">Register</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1>Coding Club</h1>
+
+   
+    <h2 id="events">Upcoming Events</h2>
+
+    <table border="1">
+        <caption>Club Events</caption>
+
+        <thead>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>HTML Workshop</td>
+                <td>14 july</td>
+                <td>Lab 8</td>
+            </tr>
+
+            <tr>
+                <td>Hackathon</td>
+                <td>02 september</td>
+                <td>Seminar Hall</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total events: 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+    <h2 id="register">Register</h2>
+
+    <form action="#" method="post">
+
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Your name" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password"
+                   name="password" required>
+        </p>
+
+        <p>
+            <label for="dob">Date of birth:</label>
+            <input type="date" id="dob" name="dob">
+        </p>
+
+        <p>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </p>
+
+        <p>
+            Gender:
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+        </p>
+
+        <p>
+            Interests:
+            <input type="checkbox" id="web" name="interests" value="Web">
+            <label for="web">Web</label>
+
+            <input type="checkbox" id="dsa" name="interests" value="DSA">
+            <label for="dsa">DSA</label>
+        </p>
+
+        <p>
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch">
+                <option value="BTECH">B.TECH</option>
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="Other">Other</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="reason">Why do you want to join?</label>
+            <br>
+            <textarea id="reason" name="reason"
+                      rows="4" cols="30"></textarea>
+        </p>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
